@@ -1,0 +1,19 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+	<h1>Authentification - Ajouter un produit</h1>
+	<form method="post" action="http://localhost:3000/users/addProduct">
+  
+		<label>libelle</label>
+		<input type="text" name="libelle"/><br>
+		<label>price</label>
+		<input type="number" name="price"/><br>
+    <label>description</label>
+		<input type="text" name="description"/><br>
+    <label>quantite</label>
+		<input type="number" name="quantite"/><br>
+    
+		<button type="submit">ajouter produit</button>
+
+	</form>
+{% endblock %}
